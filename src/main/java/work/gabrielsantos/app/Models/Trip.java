@@ -9,6 +9,7 @@ public class Trip {
     protected City city_ini;
     protected City city_dest;
     protected double price;
+    protected Status status;
 
     public Trip(Client client, Date travel_ini, Date travel_end, City city_ini, City city_dest) {
         this.client = client;
@@ -33,5 +34,13 @@ public class Trip {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 }
